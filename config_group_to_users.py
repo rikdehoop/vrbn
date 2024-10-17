@@ -10,12 +10,12 @@ from sqlalchemy import create_engine, text
 
 # Database connection parameters
 db_params = {
-    'dbtype': 'postgis',
-    'host': 'geo.vrbn.nl',
-    'port': '5432',
-    'database': 'mapgallery',
-    'user': 'geo',
-    'passwd': 'iELo3Y9/OZDE'
+    'dbtype': '',
+    'host': '',
+    'port': '',
+    'database': '',
+    'user': '',
+    'passwd': ''
 }
 
 engine = create_engine(f'postgresql://{db_params["user"]}:{db_params["passwd"]}@{db_params["host"]}:{db_params["port"]}/{db_params["database"]}')
